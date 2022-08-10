@@ -39,18 +39,18 @@ const Rooms = () => {
                             />
                             <span>Start a room</span>
                         </button>
-                    </div>
-                </div> */}
-
-                    <div className={styles.roomList}>
-                        {rooms.map((room) => (
-                            <RoomCard key={room.id} room={room} />
-                        ))}
-                    </div>
+                    </div> */}
                 </div>
-                {showModal && <AddRoomModal onClose={() => setShowModal(false)} />}
-            </>
-            );
+
+                <div className={styles.roomList}>
+                    {rooms.map((room) => (
+                        <RoomCard key={room.id} room={room} />
+                    ))}
+                </div>
+            </div>
+            {showModal && <AddRoomModal onClose={() => setShowModal(false)} />}
+        </>
+    );
 };
 
-            export default Rooms;
+export default Rooms;
