@@ -11,7 +11,7 @@ import Loader from '../../../components/shared/Loader/Loader';
 const StepAvatar = ({ onNext }) => {
     const dispatch = useDispatch();
     const { name, avatar } = useSelector((state) => state.activate);
-    const [image, setImage] = useState('/univoice/images/monkey-avatar.png');
+    const [image, setImage] = useState('/images/monkey-avatar.png');
     const [loading, setLoading] = useState(false);
     const [unMounted, setUnMounted] = useState(false);
 
@@ -25,9 +25,7 @@ const StepAvatar = ({ onNext }) => {
         };
     }
     async function submit() {
-        if (!name || !avatar) {
-            return;
-        }
+        if (!name || !avatar) return;
         setLoading(true);
         try {
             const { data } = await activate({ name, avatar });
@@ -53,7 +51,7 @@ const StepAvatar = ({ onNext }) => {
     return (
         <>
             <Card title={`Okay, ${name}`} icon="monkey-emoji">
-                <p className={styles.subHeading}>Please choose a profile.</p>
+                <p className={styles.subHeading}>How’s this photo?</p>
                 <div className={styles.avatarWrapper}>
                     <img
                         className={styles.avatarImage}
@@ -69,7 +67,7 @@ const StepAvatar = ({ onNext }) => {
                         className={styles.avatarInput}
                     />
                     <label className={styles.avatarLabel} htmlFor="avatarInput">
-                        Choose profile
+                        Choose a different photo
                     </label>
                 </div>
                 <div>
