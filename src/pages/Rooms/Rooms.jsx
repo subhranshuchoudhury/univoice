@@ -28,7 +28,7 @@ const Rooms = () => {
                             <input type="text" className={styles.searchInput} />
                         </div>
                     </div>
-                    <div className={styles.right}>
+                    {/* <div className={styles.right}>
                         <button
                             onClick={openModal}
                             className={styles.startRoomButton}
@@ -40,17 +40,17 @@ const Rooms = () => {
                             <span>Start a room</span>
                         </button>
                     </div>
-                </div>
+                </div> */}
 
-                <div className={styles.roomList}>
-                    {rooms.map((room) => (
-                        <RoomCard key={room.id} room={room} />
-                    ))}
+                    <div className={styles.roomList}>
+                        {rooms.map((room) => (
+                            <RoomCard key={room.id} room={room} />
+                        ))}
+                    </div>
                 </div>
-            </div>
-            {showModal && <AddRoomModal onClose={() => setShowModal(false)} />}
-        </>
-    );
+                {showModal && <AddRoomModal onClose={() => setShowModal(false)} />}
+            </>
+            );
 };
 
-export default Rooms;
+            export default Rooms;
