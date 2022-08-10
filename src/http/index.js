@@ -6,6 +6,7 @@ const api = axios.create({
     headers: {
         'Content-type': 'application/json',
         Accept: 'application/json',
+        origin: "https://subhranshuchoudhury.github.io/univoice"
     },
 });
 
