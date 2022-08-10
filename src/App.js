@@ -23,7 +23,7 @@ function App() {
                 <GuestRoute path="/univoice" exact>
                     <Home />
                 </GuestRoute>
-                <GuestRoute path="/authenticate">
+                <GuestRoute path="univoice/authenticate">
                     <Authenticate />
                 </GuestRoute>
                 <SemiProtectedRoute path="/activate">
