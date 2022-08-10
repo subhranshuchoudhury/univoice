@@ -23,16 +23,16 @@ function App() {
                 <GuestRoute path="/univoice" exact>
                     <Home />
                 </GuestRoute>
-                <GuestRoute path="/univoice/authenticate">
+                <GuestRoute path="/authenticate">
                     <Authenticate />
                 </GuestRoute>
-                <SemiProtectedRoute path="/univoice/activate">
+                <SemiProtectedRoute path="/activate">
                     <Activate />
                 </SemiProtectedRoute>
-                <ProtectedRoute path="/univoice/rooms">
+                <ProtectedRoute path="/rooms">
                     <Rooms />
                 </ProtectedRoute>
-                <ProtectedRoute path="/univoice/room/:id">
+                <ProtectedRoute path="/room/:id">
                     <Room />
                 </ProtectedRoute>
             </Switch>
