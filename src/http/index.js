@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: "http://localhost:5000",
+    baseURL: "https://univoicedb.herokuapp.com",
     withCredentials: true,
     headers: {
         'Content-type': 'application/json',
@@ -33,7 +33,7 @@ api.interceptors.response.use(
             originalRequest.isRetry = true;
             try {
                 await axios.get(
-                    `http://localhost:5000/api/refresh`,
+                    `https://univoicedb.herokuapp.com/api/refresh`,
                     {
                         withCredentials: true,
                     }

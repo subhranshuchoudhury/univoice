@@ -7,7 +7,7 @@ const socketInit = () => {
         timeout: 10000,
         transports: ['websocket'],
     };
-    return io("http://localhost:5000", options);
+    return io("https://univoicedb.herokuapp.com", options);
 };
 
 export default socketInit;
