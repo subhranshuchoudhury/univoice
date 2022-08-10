@@ -11,7 +11,7 @@ import Loader from '../../../components/shared/Loader/Loader';
 const StepAvatar = ({ onNext }) => {
     const dispatch = useDispatch();
     const { name, avatar } = useSelector((state) => state.activate);
-    const [image, setImage] = useState('images/monkey-avatar.png');
+    const [image, setImage] = useState('/univoice/images/monkey-avatar.png');
     const [loading, setLoading] = useState(false);
     const [unMounted, setUnMounted] = useState(false);
 

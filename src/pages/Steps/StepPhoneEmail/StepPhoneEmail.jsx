@@ -22,14 +22,14 @@ const StepPhoneEmail = ({ onNext }) => {
                                 }`}
                             onClick={() => setType('phone')}
                         >
-                            <img src="images/phone-white.png" alt="phone" />
+                            <img src="/univoice/images/phone-white.png" alt="phone" />
                         </button>
                         <button
                             className={`${styles.tabButton} ${type === 'email' ? styles.active : ''
                                 }`}
                             onClick={() => setType('email')}
                         >
-                            <img src="images/mail-white.png" alt="email" />
+                            <img src="/univoice/images/mail-white.png" alt="email" />
                         </button>
                     </div>
                     <Component onNext={onNext} />

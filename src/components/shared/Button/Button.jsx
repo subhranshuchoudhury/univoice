@@ -6,7 +6,7 @@ const Button = ({ text, onClick }) => {
             <span>{text}</span>
             <img
                 className={styles.arrow}
-                src="images/arrow-forward.png"
+                src="/univoice/images/arrow-forward.png"
                 alt="arrow"
             />
         </button>

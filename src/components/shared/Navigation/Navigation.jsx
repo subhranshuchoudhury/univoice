@@ -32,7 +32,7 @@ const Navigation = () => {
     return (
         <nav className={`${styles.navbar} container`}>
             <Link style={brandStyle} to="/">
-                <img src="images/logo.png" alt="logo" />
+                <img src="/univoice/images/logo.png" alt="logo" />
                 <span style={logoText}>UNI VOICE</span>
             </Link>
             {isAuth && (
@@ -44,7 +44,7 @@ const Navigation = () => {
                             src={
                                 user.avatar
                                     ? user.avatar
-                                    : 'images/monkey-avatar.png'
+                                    : '/univoice/images/monkey-avatar.png'
                             }
                             width="40"
                             height="40"
@@ -55,7 +55,7 @@ const Navigation = () => {
                         className={styles.logoutButton}
                         onClick={logoutUser}
                     >
-                        <img src="images/logout.png" alt="logout" />
+                        <img src="/univoice/images/logout.png" alt="logout" />
                     </button>
                 </div>
             )}

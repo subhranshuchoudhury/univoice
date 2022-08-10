@@ -23,7 +23,7 @@ const AddRoomModal = ({ onClose }) => {
         <div className={styles.modalMask}>
             <div className={styles.modalBody}>
                 <button onClick={onClose} className={styles.closeButton}>
-                    <img src="images/close.png" alt="close" />
+                    <img src="/univoice/images/close.png" alt="close" />
                 </button>
                 <div className={styles.modalHeader}>
                     <h3 className={styles.heading}>
@@ -41,7 +41,7 @@ const AddRoomModal = ({ onClose }) => {
                             className={`${styles.typeBox} ${roomType === 'open' ? styles.active : ''
                                 }`}
                         >
-                            <img src="images/globe.png" alt="globe" />
+                            <img src="/univoice/images/globe.png" alt="globe" />
                             <span>Open</span>
                         </div>
                         <div
@@ -49,7 +49,7 @@ const AddRoomModal = ({ onClose }) => {
                             className={`${styles.typeBox} ${roomType === 'social' ? styles.active : ''
                                 }`}
                         >
-                            <img src="images/social.png" alt="social" />
+                            <img src="/univoice/images/social.png" alt="social" />
                             <span>Social</span>
                         </div>
                         <div
@@ -57,7 +57,7 @@ const AddRoomModal = ({ onClose }) => {
                             className={`${styles.typeBox} ${roomType === 'private' ? styles.active : ''
                                 }`}
                         >
-                            <img src="images/lock.png" alt="lock" />
+                            <img src="/univoice/images/lock.png" alt="lock" />
                             <span>Private</span>
                         </div>
                     </div>
@@ -68,7 +68,7 @@ const AddRoomModal = ({ onClose }) => {
                         onClick={createRoom}
                         className={styles.footerButton}
                     >
-                        <img src="images/celebration.png" alt="celebration" />
+                        <img src="/univoice/images/celebration.png" alt="celebration" />
                         <span>Let's go</span>
                     </button>
                 </div>

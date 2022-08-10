@@ -30,7 +30,7 @@ const RoomCard = ({ room }) => {
                         <div key={speaker.id} className={styles.nameWrapper}>
                             <span>{speaker.name}</span>
                             <img
-                                src="images/chat-bubble.png"
+                                src="/univoice/images/chat-bubble.png"
                                 alt="chat-bubble"
                             />
                         </div>
@@ -39,7 +39,7 @@ const RoomCard = ({ room }) => {
             </div>
             <div className={styles.peopleCount}>
                 <span>{room.totalPeople}</span>
-                <img src="images/user-icon.png" alt="user-icon" />
+                <img src="/univoice/images/user-icon.png" alt="user-icon" />
             </div>
         </div>
     );
