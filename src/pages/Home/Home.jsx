@@ -13,7 +13,7 @@ const Home = () => {
     };
     const history = useHistory();
     function startRegister() {
-        history.push('/authenticate');
+        history.push('/univoice/authenticate');
     }
     return (
         <div className={styles.cardWrapper}>

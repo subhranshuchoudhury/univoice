@@ -31,7 +31,7 @@ const Room = () => {
     }, [isMuted]);
 
     const handManualLeave = () => {
-        history.push('/rooms');
+        history.push('/univoice/rooms');
     };
 
     const handleMuteClick = (clientId) => {

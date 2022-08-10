@@ -13,7 +13,7 @@ const AddRoomModal = ({ onClose }) => {
         try {
             if (!topic) return;
             const { data } = await create({ topic, roomType });
-            history.push(`/room/${data.id}`);
+            history.push(`/univoice/room/${data.id}`);
         } catch (err) {
             console.log(err.message);
         }

@@ -7,7 +7,7 @@ const RoomCard = ({ room }) => {
     return (
         <div
             onClick={() => {
-                history.push(`/room/${room.id}`);
+                history.push(`/univoice/room/${room.id}`);
             }}
             className={styles.card}
         >

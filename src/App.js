@@ -20,19 +20,19 @@ function App() {
         <BrowserRouter>
             <Navigation />
             <Switch>
-                <GuestRoute path="/" exact>
+                <GuestRoute path="/univoice" exact>
                     <Home />
                 </GuestRoute>
-                <GuestRoute path="/authenticate">
+                <GuestRoute path="/univoice/authenticate">
                     <Authenticate />
                 </GuestRoute>
-                <SemiProtectedRoute path="/activate">
+                <SemiProtectedRoute path="/univoice/activate">
                     <Activate />
                 </SemiProtectedRoute>
-                <ProtectedRoute path="/rooms">
+                <ProtectedRoute path="/univoice/rooms">
                     <Rooms />
                 </ProtectedRoute>
-                <ProtectedRoute path="/room/:id">
+                <ProtectedRoute path="/univoice/room/:id">
                     <Room />
                 </ProtectedRoute>
             </Switch>
