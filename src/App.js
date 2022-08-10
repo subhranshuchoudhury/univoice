@@ -23,16 +23,16 @@ function App() {
                 <GuestRoute path="/univoice" exact>
                     <Home />
                 </GuestRoute>
-                <GuestRoute path="univoice/authenticate">
+                <GuestRoute path="/univoice/authenticate">
                     <Authenticate />
                 </GuestRoute>
-                <SemiProtectedRoute path="/activate">
+                <SemiProtectedRoute path="/univoice/activate">
                     <Activate />
                 </SemiProtectedRoute>
-                <ProtectedRoute path="/rooms">
+                <ProtectedRoute path="/univoice/rooms">
                     <Rooms />
                 </ProtectedRoute>
-                <ProtectedRoute path="/room/:id">
+                <ProtectedRoute path="/univoice/room/:id">
                     <Room />
                 </ProtectedRoute>
             </Switch>
@@ -49,7 +49,7 @@ const GuestRoute = ({ children, ...rest }) => {
                 return isAuth ? (
                     <Redirect
                         to={{
-                            pathname: '/rooms',
+                            pathname: '/univoice/rooms',
                             state: { from: location },
                         }}
                     />
@@ -70,7 +70,7 @@ const SemiProtectedRoute = ({ children, ...rest }) => {
                 return !isAuth ? (
                     <Redirect
                         to={{
-                            pathname: '/',
+                            pathname: '/univoice',
                             state: { from: location },
                         }}
                     />
@@ -79,7 +79,7 @@ const SemiProtectedRoute = ({ children, ...rest }) => {
                 ) : (
                     <Redirect
                         to={{
-                            pathname: '/rooms',
+                            pathname: '/univoice/rooms',
                             state: { from: location },
                         }}
                     />
@@ -98,14 +98,14 @@ const ProtectedRoute = ({ children, ...rest }) => {
                 return !isAuth ? (
                     <Redirect
                         to={{
-                            pathname: '/',
+                            pathname: '/univoice',
                             state: { from: location },
                         }}
                     />
                 ) : isAuth && !user.activated ? (
                     <Redirect
                         to={{
-                            pathname: '/activate',
+                            pathname: '/univoice/activate',
                             state: { from: location },
                         }}
                     />
