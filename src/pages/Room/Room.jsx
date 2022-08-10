@@ -45,7 +45,7 @@ const Room = () => {
         <div>
             <div className="container">
                 <button onClick={handManualLeave} className={styles.goBack}>
-                    <img src="/images/arrow-left.png" alt="arrow-left" />
+                    <img src="images/arrow-left.png" alt="arrow-left" />
                     <span>All voice rooms</span>
                 </button>
             </div>
@@ -54,13 +54,13 @@ const Room = () => {
                     {room && <h2 className={styles.topic}>{room.topic}</h2>}
                     <div className={styles.actions}>
                         <button className={styles.actionBtn}>
-                            <img src="/images/palm.png" alt="palm-icon" />
+                            <img src="images/palm.png" alt="palm-icon" />
                         </button>
                         <button
                             onClick={handManualLeave}
                             className={styles.actionBtn}
                         >
-                            <img src="/images/win.png" alt="win-icon" />
+                            <img src="images/win.png" alt="win-icon" />
                             <span>Leave quietly</span>
                         </button>
                     </div>
@@ -90,13 +90,13 @@ const Room = () => {
                                         {client.muted ? (
                                             <img
                                                 className={styles.mic}
-                                                src="/images/mic-mute.png"
+                                                src="images/mic-mute.png"
                                                 alt="mic"
                                             />
                                         ) : (
                                             <img
                                                 className={styles.micImg}
-                                                src="/images/mic.png"
+                                                src="images/mic.png"
                                                 alt="mic"
                                             />
                                         )}

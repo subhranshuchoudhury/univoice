@@ -24,7 +24,7 @@ const Rooms = () => {
                     <div className={styles.left}>
                         <span className={styles.heading}>All voice rooms</span>
                         <div className={styles.searchBox}>
-                            <img src="/images/search-icon.png" alt="search" />
+                            <img src="images/search-icon.png" alt="search" />
                             <input type="text" className={styles.searchInput} />
                         </div>
                     </div>
@@ -34,7 +34,7 @@ const Rooms = () => {
                             className={styles.startRoomButton}
                         >
                             <img
-                                src="/images/add-room-icon.png"
+                                src="images/add-room-icon.png"
                                 alt="add-room"
                             />
                             <span>Start a room</span>
