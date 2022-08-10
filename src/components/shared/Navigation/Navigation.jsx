@@ -31,7 +31,7 @@ const Navigation = () => {
 
     return (
         <nav className={`${styles.navbar} container`}>
-            <Link style={brandStyle} to="/">
+            <Link style={brandStyle} to="/univoice">
                 <img src="/univoice/images/logo.png" alt="logo" />
                 <span style={logoText}>UNI VOICE</span>
             </Link>
