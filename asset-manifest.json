@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/univoice/static/css/main.b3d445f8.css",
-    "main.js": "/univoice/static/js/main.f82e0cbd.js",
+    "main.js": "/univoice/static/js/main.165d7449.js",
     "static/js/787.088594ff.chunk.js": "/univoice/static/js/787.088594ff.chunk.js",
     "index.html": "/univoice/index.html",
     "main.b3d445f8.css.map": "/univoice/static/css/main.b3d445f8.css.map",
-    "main.f82e0cbd.js.map": "/univoice/static/js/main.f82e0cbd.js.map",
+    "main.165d7449.js.map": "/univoice/static/js/main.165d7449.js.map",
     "787.088594ff.chunk.js.map": "/univoice/static/js/787.088594ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b3d445f8.css",
-    "static/js/main.f82e0cbd.js"
+    "static/js/main.165d7449.js"
   ]
 }
