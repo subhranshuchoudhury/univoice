@@ -32,7 +32,7 @@ const Navigation = () => {
     return (
         <nav className={`${styles.navbar} container`}>
             <Link style={brandStyle} to="/univoice">
-                <img src="/univoice/images/logo.png" alt="logo" />
+                <img src="/univoice/images/mic.png" alt="logo" />
                 <span style={logoText}>UNI VOICE</span>
             </Link>
             {isAuth && (

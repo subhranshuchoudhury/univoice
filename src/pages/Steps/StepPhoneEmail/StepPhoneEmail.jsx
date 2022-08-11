@@ -22,7 +22,7 @@ const StepPhoneEmail = ({ onNext }) => {
                                 }`}
                             onClick={() => setType('phone')}
                         >
-                            <img src="/univoice/images/mail-white.png" alt="phone" />
+                            <img src="/univoice/images/phone.png" alt="phone" />
                         </button>
                         {/* <button
                             className={`${styles.tabButton} ${type === 'email' ? styles.active : ''

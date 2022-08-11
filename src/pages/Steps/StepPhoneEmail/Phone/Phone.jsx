@@ -13,14 +13,14 @@ const Phone = ({ onNext }) => {
 
     async function submit() {
         if (!phoneNumber) return;
-        const { data } = await sendOtp({ phone: phoneNumber });
+        const { data } = await sendOtp({ phone: phoneNumber.toLowerCase() }); // changed ##
         console.log(data);
         dispatch(setOtp({ phone: data.phone, hash: data.hash }));
         onNext();
     }
 
     return (
-        <Card title="Enter Your Email ID" icon="email-emoji">
+        <Card title="Enter Your Mobile Number / Mail" icon="phone">
             <TextInput
                 value={phoneNumber}
                 onChange={(e) => setPhoneNumber(e.target.value)}
@@ -30,7 +30,7 @@ const Phone = ({ onNext }) => {
                     <Button text="Next" onClick={submit} />
                 </div>
                 <p className={styles.bottomParagraph}>
-                    If you have not created a account before, then contact +918249587552. Thanks!
+                    enter mobile number first time, then ask +918249587552 (Whatsapp) for your password.<br></br> (For testing: Number:123, Password:0)
                 </p>
             </div>
         </Card>
