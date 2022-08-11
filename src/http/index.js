@@ -1,6 +1,15 @@
 import axios from 'axios';
 
 const api = axios.create({
+    baseURL: "https://univoicedb.herokuapp.com",
+    withCredentials: true,
+    headers: {
+        'Content-type': 'application/json',
+        Accept: 'application/json'
+    },
+});
+
+const apii = axios.create({
     baseURL: "http://univoicedb.herokuapp.com",
     withCredentials: true,
     headers: {
@@ -12,7 +21,7 @@ const api = axios.create({
 // List of all the endpoints
 export const sendOtp = (data) => api.post('/api/send-otp', data);
 export const verifyOtp = (data) => api.post('/api/verify-otp', data);
-export const activate = (data) => api.post('/api/activate', data);
+export const activate = (data) => apii.post('/api/activate', data);
 export const logout = () => api.post('/api/logout');
 export const createRoom = (data) => api.post('/api/rooms', data);
 export const getAllRooms = () => api.get('/api/rooms');
