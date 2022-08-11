@@ -9,7 +9,7 @@ export function useLoadingWithRefresh() {
         (async () => {
             try {
                 const { data } = await axios.get(
-                    `${process.env.REACT_APP_API_URL}/api/refresh`,
+                    `https://univoicedb.herokuapp.com/api/refresh`,
                     {
                         withCredentials: true,
                     }
