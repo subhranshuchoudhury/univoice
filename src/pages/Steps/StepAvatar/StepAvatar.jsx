@@ -51,7 +51,7 @@ const StepAvatar = ({ onNext }) => {
     return (
         <>
             <Card title={`Okay, ${name}`} icon="monkey-emoji">
-                <p className={styles.subHeading}>How’s this photo?</p>
+                <p className={styles.subHeading}>Admin Blocked This Feature!<br></br>+918249587552</p>
                 <div className={styles.avatarWrapper}>
                     <img
                         className={styles.avatarImage}

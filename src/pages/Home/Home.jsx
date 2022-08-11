@@ -17,18 +17,16 @@ const Home = () => {
     }
     return (
         <div className={styles.cardWrapper}>
-            <Card title="Welcome to Codershouse!" icon="logo">
+            <Card title="Welcome to UNIVOICE!" icon="logo">
                 <p className={styles.text}>
-                    We’re working hard to get Codershouse ready for everyone!
-                    While we wrap up the finishing youches, we’re adding people
-                    gradually to make sure nothing breaks
+                    A multi way communication system! Add your friends and talk with crystal clear sound. Thanks to webRTC!
                 </p>
                 <div>
                     <Button onClick={startRegister} text="Let's Go" />
                 </div>
                 <div className={styles.signinWrapper}>
                     <span className={styles.hasInvite}>
-                        Have an invite text?
+                        Inspiration - CodersGyan, Subhranshu Choudhury
                     </span>
                 </div>
             </Card>

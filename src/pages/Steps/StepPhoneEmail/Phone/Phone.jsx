@@ -20,7 +20,7 @@ const Phone = ({ onNext }) => {
     }
 
     return (
-        <Card title="Enter you phone number" icon="phone">
+        <Card title="Enter Your Email ID" icon="email-emoji">
             <TextInput
                 value={phoneNumber}
                 onChange={(e) => setPhoneNumber(e.target.value)}
@@ -30,8 +30,7 @@ const Phone = ({ onNext }) => {
                     <Button text="Next" onClick={submit} />
                 </div>
                 <p className={styles.bottomParagraph}>
-                    By entering your number, you’re agreeing to our Terms of
-                    Service and Privacy Policy. Thanks!
+                    If you have not created a account before, then contact +918249587552. Thanks!
                 </p>
             </div>
         </Card>

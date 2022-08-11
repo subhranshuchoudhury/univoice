@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Phone from './Phone/Phone';
-import Email from './Email/Email';
+// import Email from './Email/Email';
 import styles from './StepPhoneEmail.module.css';
 
 const phoneEmailMap = {
     phone: Phone,
-    email: Email,
+    // email: Email,
 };
 
 const StepPhoneEmail = ({ onNext }) => {
@@ -22,15 +22,15 @@ const StepPhoneEmail = ({ onNext }) => {
                                 }`}
                             onClick={() => setType('phone')}
                         >
-                            <img src="/univoice/images/phone-white.png" alt="phone" />
+                            <img src="/univoice/images/mail-white.png" alt="phone" />
                         </button>
-                        <button
+                        {/* <button
                             className={`${styles.tabButton} ${type === 'email' ? styles.active : ''
                                 }`}
                             onClick={() => setType('email')}
                         >
                             <img src="/univoice/images/mail-white.png" alt="email" />
-                        </button>
+                        </button> */}
                     </div>
                     <Component onNext={onNext} />
                 </div>
