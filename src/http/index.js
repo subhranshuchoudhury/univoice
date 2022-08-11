@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: "univoicedb.herokuapp.com",
+    baseURL: "http://univoicedb.herokuapp.com",
     withCredentials: true,
     headers: {
         'Content-type': 'application/json',
