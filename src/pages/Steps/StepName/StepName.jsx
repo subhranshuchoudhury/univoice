@@ -19,8 +19,8 @@ const StepName = ({ onNext }) => {
     }
     return (
         <>
-            <Card title="What’s your full name?" icon="goggle-emoji">
-                <TextInput
+            <Card title="feature blocked by admin.(subhranshu)" icon="goggle-emoji">
+                {/* <TextInput
                     value={fullname}
                     onChange={(e) => setFullname(e.target.value)}
                 />
@@ -29,7 +29,7 @@ const StepName = ({ onNext }) => {
                 </p>
                 <div>
                     <Button onClick={nextStep} text="Next" />
-                </div>
+                </div> */}
             </Card>
         </>
     );
