@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const api = axios.create({
     baseURL: "https://univoicedb.herokuapp.com",
-    withCredentials: true,
+    // withCredentials: true,
     headers: {
         'Content-type': 'application/json',
         Accept: 'application/json'
@@ -34,9 +34,9 @@ api.interceptors.response.use(
             try {
                 await axios.get(
                     `https://univoicedb.herokuapp.com/api/refresh`,
-                    {
-                        withCredentials: true,
-                    }
+                    // {
+                    //     withCredentials: true,
+                    // }
                 );
 
                 return api.request(originalRequest);

@@ -10,9 +10,9 @@ export function useLoadingWithRefresh() {
             try {
                 const { data } = await axios.get(
                     `https://univoicedb.herokuapp.com/api/refresh`,
-                    {
-                        withCredentials: true,
-                    }
+                    // {
+                    //     withCredentials: true,
+                    // }
                 );
                 dispatch(setAuth(data));
                 setLoading(false);

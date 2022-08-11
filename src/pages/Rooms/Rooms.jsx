@@ -14,9 +14,9 @@ const Rooms = () => {
         };
         fetchRooms();
     }, []);
-    function openModal() {
-        setShowModal(true);
-    }
+    // function openModal() {
+    //     setShowModal(true);
+    // }
     return (
         <>
             <div className="container">
