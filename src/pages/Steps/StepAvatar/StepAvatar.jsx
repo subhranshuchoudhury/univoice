@@ -11,7 +11,7 @@ import Loader from '../../../components/shared/Loader/Loader';
 const StepAvatar = ({ onNext }) => {
     const dispatch = useDispatch();
     const { name, avatar } = useSelector((state) => state.activate);
-    const [image, setImage] = useState('/univoice/images/monkey-avatar.png');
+    const [image, setImage] = useState('/images/monkey-avatar.png');
     const [loading, setLoading] = useState(false);
     const [unMounted, setUnMounted] = useState(false);
 
@@ -21,11 +21,14 @@ const StepAvatar = ({ onNext }) => {
         reader.readAsDataURL(file);
         reader.onloadend = function () {
             setImage(reader.result);
-            dispatch(setAvatar(reader.result));
+            console.log(reader.result);
+            dispatch(setAvatar('i'));
         };
     }
     async function submit() {
-        if (!name || !avatar) return;
+        if (!name || !avatar) {
+            return;
+        }
         setLoading(true);
         try {
             const { data } = await activate({ name, avatar });
@@ -51,7 +54,7 @@ const StepAvatar = ({ onNext }) => {
     return (
         <>
             <Card title={`Okay, ${name}`} icon="monkey-emoji">
-                <p className={styles.subHeading}>Admin Blocked This Feature!<br></br>+918249587552</p>
+                <p className={styles.subHeading}>Please choose a profile.</p>
                 <div className={styles.avatarWrapper}>
                     <img
                         className={styles.avatarImage}
@@ -67,7 +70,7 @@ const StepAvatar = ({ onNext }) => {
                         className={styles.avatarInput}
                     />
                     <label className={styles.avatarLabel} htmlFor="avatarInput">
-                        Choose a different photo
+                        Choose profile
                     </label>
                 </div>
                 <div>
