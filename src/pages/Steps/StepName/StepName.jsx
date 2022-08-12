@@ -19,8 +19,8 @@ const StepName = ({ onNext }) => {
     }
     return (
         <>
-            <Card title="What’s your full name?" icon="goggle-emoji">
-                <TextInput
+            <Card title="Only registered user can login. Ask Admin (+918249587552) to get your login credentials. While you can use 123 or 456 as number and 0 as password for test login." icon="goggle-emoji">
+                {/* <TextInput
                     value={fullname}
                     onChange={(e) => setFullname(e.target.value)}
                 />
@@ -29,7 +29,7 @@ const StepName = ({ onNext }) => {
                 </p>
                 <div>
                     <Button onClick={nextStep} text="Next" />
-                </div>
+                </div> */}
             </Card>
         </>
     );
